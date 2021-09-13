@@ -1,0 +1,123 @@
+using System;
+
+
+namespace ConsoleApp_Demo
+
+{
+
+  
+class Program
+  
+{
+
+    
+static void Main (string[]args)
+   
+ {
+
+      
+int Totalcost = 0;
+
+        
+Start:
+        
+        
+Console.WriteLine("Please Select your Coffee size:\n 1-Small : Rs 100/-\n 2-Medium : Rs 200/-\n 3-Large : Rs 300/-\n");
+
+      
+int UserChoice = int.Parse (Console.ReadLine ());
+
+      
+switch (UserChoice)
+
+	
+{
+
+	
+case 1:
+
+	  
+Totalcost += 100;
+
+	  
+Console.WriteLine ("Your Coice is 1 : Small Coffee Rs 100/- \n");
+
+	  
+break;
+
+	  
+case 2:
+Totalcost += 200;
+
+	 
+Console.WriteLine ("Your Coice is 2 : Medium coffee Rs 200/-\n");
+
+	 
+ break;
+
+	  
+case 3:
+Totalcost += 300;
+
+	  
+Console.WriteLine ("Your Coice is 3 : Large coffee Rs 300/-\n");
+
+	  
+break;
+
+	  
+default:
+	  
+Console. WriteLine("Your Coice {0}:is not in the List \n", UserChoice);
+	  
+goto Start;
+
+	
+}
+
+      
+Choice:
+      
+      
+Console.WriteLine("Do you want to Buy an Another Coffee... \nPlease Select YES or NO \n");
+      
+string UserNextChoice = Console.ReadLine ();
+      
+switch (UserNextChoice.ToUpper ())
+	
+{
+
+	
+case "YES":
+
+	  
+goto Start;
+
+	 
+case "NO":
+	  
+break;
+
+	  
+default:
+Console.WriteLine("Your Coice is not in the List... Please Select YES or NO Only...\n");
+
+	  
+goto Choice;
+
+	
+}
+
+     
+ Console.WriteLine ("Excellent Choice {0}:\n\n", UserChoice);
+      
+Console.WriteLine ("The Total Bill Ammount is  {0} Rs/- Only",Totalcost);
+
+    
+}
+
+ 
+}
+
+
+}
