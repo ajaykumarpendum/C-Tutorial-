@@ -1,0 +1,20 @@
+using System;
+
+namespace SamplePrograms 
+{
+class EvenNumbers 
+  {
+public static void Main () 
+    {
+Console.WriteLine ("Please enter your target?\n");
+      int targetNumber = 0;
+      targetNumber = Convert.ToInt32 (Console.ReadLine ());
+      int Start=0;
+      while(Start<=targetNumber)
+      {
+          Console.WriteLine(Start);
+          Start=Start+2;
+      }
+} 
+} 
+} 
