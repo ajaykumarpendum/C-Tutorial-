@@ -1,0 +1,27 @@
+#using System;  
+  
+namespace SumNNs  
+{  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            int FNumber, SNumber, Result, sum = 0;  
+            Console.WriteLine("Please enter the First Number");  
+            FNumber = Convert.ToInt32(Console.ReadLine());  
+            Console.WriteLine("Please enter the Second Number");  
+            SNumber = Convert.ToInt32(Console.ReadLine());  
+            Result = FNumber + SNumber;  
+            Console.WriteLine("Sum of two Numbers are: {0}", Result.ToString());  
+            Console.ReadLine();
+
+	for (int i=1; i<=Result; i++)
+	{
+	sum += i;
+	}
+
+	Console.WriteLine("Sum of 1+2+3...{0} natural numbers are= {1}", Result, sum);
+
+        }  
+    }  
+}
